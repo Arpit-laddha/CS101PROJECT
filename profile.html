@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Arpit's Digital Banking Profile</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-header">
+            <div class="profile-photo">
+                <img src="https://picsum.photos/120/120?person=1" alt="Arpit Maheshwari">
+            </div>
+            <div class="account-info">
+                <h1>Arpit Maheshwari</h1>
+                <p class="text-muted">Savings Account · Since 2020</p>
+                <div class="balance-display"> ₹45,820.50<span class="text-sm">Available Balance</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="account-details">
+            <div class="detail-item"><span>Account Number:</span><strong>5010 0345 2100 3256</strong></div>
+            <div class="detail-item">
+                <span>IFSC Code:</span>
+                <strong>SBIN0000457</strong></div>
+            <div class="detail-item">
+                <span>Last Updated:</span>
+                <span>Today at 3:45 PM</span></div>
+        </div>
+
+        <div class="transaction-history">
+            <h3>Recent Activity</h3>
+            <div class="transaction-item transaction-credit">
+                <span>Salary Credited</span>
+                <span>+ ₹58,200.00</span>
+                <small>15 March 2025</small>
+            </div>
+            <div class="transaction-item transaction-debit">
+                <span>Amazon India</span>
+                <span>- ₹4,599.00</span>
+                <small>14 March 2025</small>
+            </div>
+            <div class="transaction-item transaction-debit">
+                <span>Mobile Recharge</span>
+                <span>- ₹699.00</span>
+                <small>7 March 2025</small>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+
+            
+            <a href="withdraw.html" class="withdraw-btn"> Withdraw </a>
+            <button class="deposit-btn" onclick="dep('deposit')">
+                📥 Deposit Money
+            </button>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="balanceFlow"></canvas>
+        </div>
+    </div>
+
+    <script>
+        // Balance Flow Chart
+        const ctx = document.getElementById('balanceFlow').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+                datasets: [{
+                    label: 'Account Balance Trend',
+                    data: [32000, 28500, 41000, 38200, 45820],
+                    borderColor: '#4CAF50',
+                    tension: 0.3,
+                    fill: true,
+                    backgroundColor: 'rgba(76,175,80,0.05)',
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                    }
+                }
+            }
+        });
+
+        function dep(action) {
+           
+        }
+    </script>
+</body>
+</html>
