@@ -1,0 +1,110 @@
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f7f9fc;
+            margin: 2rem;
+            color: #3a3b3c;
+        }
+
+        .profile-card {
+            background: white;
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            padding: 2.5rem;
+            position: relative;
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .profile-photo img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #4CAF50;
+            box-shadow: 0 4px 12px rgba(76,175,80,0.2);
+        }
+
+        .account-info {
+            flex-grow: 1;
+        }
+
+        .balance-display {
+            font-size: 2.2rem;
+            color: #2e7d32;
+            margin: 1rem 0;
+            font-weight: 600;
+        }
+
+        .transaction-history {
+            margin-top: 2rem;
+        }
+
+        .transaction-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            background: #f8f9fa;
+            border-radius: 10px;
+            transition: transform 0.2s ease;
+        }
+
+        .transaction-item:hover {
+            transform: translateX(8px);
+            background: #f1f8e9;
+        }
+
+        .transaction-credit {
+            color: #2e7d32;
+        }
+        
+        .transaction-debit {
+            color: #c62828;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        button {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .withdraw-btn {
+            background: #c62828;
+            color: white;
+        }
+
+        .deposit-btn {
+            background: #2e7d32;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        .chart-container {
+            margin: 2rem 0;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 12px;
+        }
+    

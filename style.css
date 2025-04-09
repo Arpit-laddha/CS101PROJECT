@@ -1,0 +1,88 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f2f6fc;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.center-screen {
+  text-align: center;
+}
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.main-btn {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.deposit {
+  background-color: #2ecc71;
+}
+
+.withdraw {
+  background-color: #e74c3c;
+}
+
+.form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.otp-section {
+  display: none;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.back-link {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #34495e;
+  font-size: 0.9rem;
+}
